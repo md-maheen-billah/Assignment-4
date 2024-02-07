@@ -30,7 +30,7 @@ function deleteInvalids(array) {
   if (Array.isArray(array) === false) {
     return "Please Insert An Array Instead";
   }
-  for (arr of array) {
+  for (let arr of array) {
     if (typeof arr === "number" && Number.isNaN(arr) === false) {
       filtered.push(arr);
     }
@@ -55,7 +55,7 @@ function monthlySavings(arr, livingCost) {
   if (Array.isArray(arr) === false || typeof livingCost !== "number") {
     return "invalid input";
   }
-  for (ar of arr) {
+  for (let ar of arr) {
     if (ar >= 3000) {
       const dis = (ar * 20) / 100;
       ar = ar - dis;
@@ -68,7 +68,3 @@ function monthlySavings(arr, livingCost) {
   }
   return output;
 }
-console.log(monthlySavings([1000, 2000, 3000], 5400));
-console.log(monthlySavings([1000, 2000, 2500], 5000));
-console.log(monthlySavings([900, 2700, 3400], 10000));
-console.log(monthlySavings(100, [900, 2700, 3400]));

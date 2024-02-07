@@ -3,7 +3,7 @@ function monthlySavings(arr, livingCost) {
   if (Array.isArray(arr) === false || typeof livingCost !== "number") {
     return "invalid input";
   }
-  for (const ar of arr) {
+  for (let ar of arr) {
     if (ar >= 3000) {
       const dis = (ar * 20) / 100;
       ar = ar - dis;
