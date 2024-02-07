@@ -3,7 +3,7 @@ function deleteInvalids(array) {
   if (Array.isArray(array) === false) {
     return "Please Insert An Array Instead";
   }
-  for (arr of array) {
+  for (const arr of array) {
     if (typeof arr === "number" && Number.isNaN(arr) === false) {
       filtered.push(arr);
     }
