@@ -1,5 +1,5 @@
 # Assignment-4
-# Log 23 (Duration: 6 Months)
+# Log 23 (Duration: 1/6 Months)
 Today, I undertook assignment-4 provided by "Programming Hero" and effectively finished it, including the bonus and optional section.
 
 ---
